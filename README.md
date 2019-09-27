@@ -1,4 +1,4 @@
-# Oracle11g docker image
+# Oracle11g docker image (centos7)
 
 This is a Oracle image to easily build an Oracle environment for test purposes.
 
@@ -33,7 +33,10 @@ The data are persisted on the directory `/u01/app/oracle/data`. To keep them bet
 - ORACLE_PASSWORD : The password of the user (mandatory)
 - ORACLE_DBA_PASSWORD : Administrator password (mandatory)
 - ORACLE_UNQNAME : the database’s unique name value. (optional)
-
+- MEMORY_PERCENTAGE : The argument will specify the percentage of total memory that can be use by Oracle SGA and PGA combined (default:30)
+- EM_CONFIGURATION : Enterprise Manager Configuration Type (default:LOCAL)
+    - option, LOCAL, CENTRAL, NOBACKUP, NOEMAIL, and NONE.
+    
 ## Thankful
 * [ethicus-solution](https://github.com/ethicus-solution/docker-oracle11g)
 * [exo-docker](https://github.com/exo-docker/exo-oracle)
