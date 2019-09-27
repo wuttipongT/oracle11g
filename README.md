@@ -33,8 +33,8 @@ The data are persisted on the directory `/u01/app/oracle/data`. To keep them bet
 - ORACLE_PASSWORD : The password of the user (mandatory)
 - ORACLE_DBA_PASSWORD : Administrator password (mandatory)
 - ORACLE_UNQNAME : the database’s unique name value. (optional)
-- MEMORY_PERCENTAGE : The argument will specify the percentage of total memory that can be use by Oracle SGA and PGA combined (default:30)
-- EM_CONFIGURATION : Enterprise Manager Configuration Type (default:LOCAL)
+- MEMORY_PERCENTAGE : The argument will specify the percentage of total memory that can be use by Oracle SGA and PGA combined (default: 30)
+- EM_CONFIGURATION : Enterprise Manager Configuration Type (default: LOCAL)
     - option, LOCAL, CENTRAL, NOBACKUP, NOEMAIL, and NONE.
     
 ## Thankful
