@@ -15,7 +15,7 @@ A build of the image is available on the [docker hub](https://hub.docker.com/r/b
 
 The Oracle instance can be launched with this command :
 ```
-docker run --name oracledb11g -p 1521:1521 -p 5500:5500 -p 5520:5520 -e ORACLE_SID=orcl -e ORACLE_USER=dba -e ORACLE_PASSWORD=secert -e ORACLE_DBA_PASSWORD=password wutti/oracle:11g
+docker run --name oracledb11g -p 1521:1521 -p 5500:5500 -p 5520:5520 -e ORACLE_SID=orcl -e ORACLE_USER=dba -e ORACLE_PASSWORD=secert -e ORACLE_DBA_PASSWORD=password bedwuttipong/oracle:11g
 ```
 
 This will launch Oracle and initialize the database.
