@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+    oracle11g:
+        build: .
+        #network_mode: host
+        image: wutti/oracle:11g
+        container_name: oracledb11g
+        restart: always
+        privileged: true
+        stdin_open: true
+        tty: true
+        entrypoint: /entrypoint.sh
+        volumes:
+          - ./shared/:/shared
+          #- /backup:/u01/app/oracle/data
+        environment:
+          ORACLE_SID: orcl
+          ORACLE_USER: user01
+          ORACLE_PASSWORD: secret
+          ORACLE_DBA_PASSWORD: password
+          ORACLE_UNQNAME: orcl
