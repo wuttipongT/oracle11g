@@ -11,7 +11,7 @@ This is a Oracle image to easily build an Oracle environment for test purposes.
 
 ## How to run
 
-A build of the image is available on the [docker hub](https://hub.docker.com/r/bedwuttipong/docsdocker/).
+A build of the image is available on the [docker hub](https://hub.docker.com/r/bedwuttipong/oracle/).
 
 The Oracle instance can be launched with this command :
 ```
