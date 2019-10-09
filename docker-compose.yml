@@ -9,7 +9,7 @@ services:
         privileged: true
         stdin_open: true
         tty: true
-        entrypoint: /entrypoint.sh
+        #entrypoint: /entrypoint.sh
         volumes:
           - ./shared/:/shared
           #- /backup:/u01/app/oracle/data
