@@ -24,9 +24,7 @@ WORKDIR /installer
 USER oracle
 RUN unzip "*.zip" && \
     /installer/database/runInstaller -ignoresysprereqs -ignoreprereq -waitforcompletion -force -silent ORACLE_HOME=${ORACLE_HOME} ORACLE_HOME_NAME=orcl -responseFile ${ORACLE_BASE}/db_install.rsp DECLINE_SECURITY_UPDATES=true ORACLE_BASE=${ORACLE_BASE} && \
-    rm -rf /installer/* && \
-    echo "# fix $ORACLE_HOME/bin/oracle command empty file" && \
-    if [ ! -s ${ORACLE_HOME}/bin/oracle ]; then make -f ${ORACLE_HOME}/rdbms/lib/ins_rdbms.mk javavm_setup_default_jdk; ${ORACLE_HOME}/bin/relink as_installed; fi
+    rm -rf /installer/*
 
 USER root
 RUN $ORACLE_HOME/root.sh && \
