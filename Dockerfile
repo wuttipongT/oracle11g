@@ -1,5 +1,7 @@
 FROM centos:7
 
+MAINTAINER Wuttipong Thongmon <bed.wuttipong@gmail.com>
+
 COPY installer/"*.zip" /installer/
 COPY installer/oraInst.loc /etc/
 
